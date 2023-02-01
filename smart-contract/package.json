@@ -1,0 +1,27 @@
+{
+  "name": "pancakeswap-smart-contract",
+  "version": "2.0.0",
+  "license": "GPL-3.0-or-later",
+  "author": "Vũ Đắc Hoàng Ân",
+  "scripts": {
+    "start": "hardhat node",
+    "compile": "hardhat compile",
+    "test": "hardhat test --network localhost",
+    "deploy1": "hardhat run scripts/deploy1.js --network",
+    "deploy2": "hardhat run scripts/deploy2.js --network",
+    "verify": "hardhat verify --network testnet"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.7",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.4",
+    "@openzeppelin/contracts": "^4.8.0",
+    "chai": "^4.3.7",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.5"
+  }
+}
